@@ -1,43 +1,122 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+
+
+.main {
+	 background: #070326;
+	 
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+
+
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #070326;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+
+.navbar li.l {
+    float: left;
+    font:  1.7em/1 "Brush Script MT", cursive;
 }
-a {
+
+.navbar li.r {
+    float: right;
+}
+
+.navbar li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    color: #999;
+    color: #c8b895;
 }
-a:hover {
-    text-decoration: underline;
+
+.navbar li a.active {
+    background-color: #4f5457;
+    text-decoration: none;
+    color: #c8b895;
+}
+
+.navbar li a:hover {
+    background-color: #4f5457;
+    text-decoration: none;
+    color: #c8b895;
 }
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+	font: bold 4em/1 "Geneva", sans-serif;
+    color: #c8b895;
+}
+h2 {
+	font: bold 1.5em/1 "Geneva", sans-serif;
+    color: #c8b895;
+}
+h3 {
+    font: bold 1.2em/1 "Geneva", sans-serif;
+    color: #c8b895;
+    line-height: 130%;
+    margin-top: 20px;
 }
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+	font: 1em "Cambria", serif;
+    color: #c8b895;
+    line-height: 130%;
+    margin-left: 20px;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+ul{
+	font: 1em "Cambria", serif;
+    color: #c8b895;
+    
+    margin-left: 40px;
 }
 
-ul.posts li {
-    list-style: none;
+p a{
+    text-decoration: underline;
+    color: #c8b895;
+    font: 0.8em "Cambria", serif;
+}
+p a:hover{
+    text-decoration: underline;
+    color: #c8b895;
+    font: 0.8em "Cambria", serif;
+    background-color: #4f5457;
+}
+p a:active{
+    text-decoration: underline;
+    color: #c8b895;
+    font: 0.8em "Cambria", serif;
+}
+
+section {
+    width: 80%;
+    height: 200px;
+    margin: auto;
+}
+div#one {
+	font: 2em "Cambria", serif;
+    width: 30%;
+    height: 200px;
+    float: left;
+    color: #c8b895;
+}
+div#two {
+	font: 2em "Cambria", serif;
+    width: 30%;
+    float: left;
+    height: 200px;
+    margin-left: 40px;
+    color: #c8b895;
+}
+div#bottom {
+	font: 1.3em "Cambria", serif;
+    width: 50%;
+    position: bottom;
+    color: #c8b895;
+}
+
+img.proj{
+    height :200px;
+    width:220px;
 }
