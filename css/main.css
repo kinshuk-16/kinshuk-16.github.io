@@ -1,7 +1,6 @@
-
 .main {
-	 background: #070326;
-	 
+     background: #070326;
+     
 }
 
 .navbar ul {
@@ -42,11 +41,11 @@
     color: #c8b895;
 }
 h1 {
-	font: bold 4em/1 "Geneva", sans-serif;
+    font: bold 4em/1 "Geneva", sans-serif;
     color: #c8b895;
 }
 h2 {
-	font: bold 1.5em/1 "Geneva", sans-serif;
+    font: bold 1.5em/1 "Geneva", sans-serif;
     color: #c8b895;
 }
 h3 {
@@ -60,13 +59,13 @@ h4{
     color: #c8b895;
 }
 p {
-	font: 15px "Cambria", serif;
+    font: 15px "Cambria", serif;
     color: #c8b895;
     line-height: 130%;
     margin-left: 20px;
 }
 ul{
-	font: 15px "Cambria", serif;
+    font: 15px "Cambria", serif;
     color: #c8b895;
     line-height: 130%;
     margin-left: 40px;
@@ -101,14 +100,14 @@ section {
     margin: auto;
 }
 div#one {
-	font: 2em "Cambria", serif;
+    font: 2em "Cambria", serif;
     width: 30%;
     height: 200px;
     float: left;
     color: #c8b895;
 }
 div#two {
-	font: 2em "Cambria", serif;
+    font: 2em "Cambria", serif;
     width: 30%;
     float: left;
     height: 200px;
@@ -116,7 +115,7 @@ div#two {
     color: #c8b895;
 }
 div#bottom {
-	font: 1.3em "Cambria", serif;
+    font: 1.3em "Cambria", serif;
     width: 50%;
     position: bottom;
     color: #c8b895;
