@@ -5,8 +5,11 @@
 
 	    <meta charset="utf-8" />
 	    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	    <link rel="stylesheet" href="css/kube.min.css" />
+	    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+		<!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+	    <link rel="stylesheet" href="css/kube.min.css" />-->
 	    <link rel="stylesheet" href="css/main.css" />
 		<style>
 			.main{ 
@@ -21,6 +24,7 @@
 	   
 	</head>
 	<body class ="main"> 
+		<div class="container-fluid">
 		<nav class="navbar">
 			<ul>
 			  <li class ="l"><a href="/">Kinshuk</a></li>
@@ -32,16 +36,19 @@
 		
 			
 		    <section>
+		    	<div class="row">
 		    	<h1>Kinshuk</h1>
-			    <div id="one">I am a graduate student at UC Berkeley School of Information</div>
-			    <div id="two">I work at the intersection of design and development</div>
+			    <div id="one" class="col-md-6 col-xs-6" style="padding-left: 0px;">I am a graduate student at UC Berkeley School of Information</div>
+			    <div id="two" class="col-md-6 col-xs-6" >I work at the intersection of design and development</div>
 			    <div id= "bottom">
-			    	<a href="/portfolio" class="btn btn-yellow btn-outline">Visit Portfolio</a>
-			    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			    	<a href="/about" class="btn btn-yellow btn-outline">Read More</a>
-			    </div>
-			    
+			    	<a href="/portfolio" class="btn btn-outline" style="margin-right:70px; margin-bottom:20px" >Visit Portfolio</a>	
+			    	<a href="/about" class="btn btn-outline" >Read More</a>
+			    </div>  
+			</div>
 			</section>	
-
+		</div>
 	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
 </html>

@@ -5,8 +5,8 @@
 
 	    <meta charset="utf-8" />
 	    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	    <link rel="stylesheet" href="../../css/kube.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
+	    <!--<link rel="stylesheet" href="../../css/kube.min.css" />-->
 	    <link rel="stylesheet" href="../../css/main.css" />
 		<style>
 			
@@ -14,6 +14,7 @@
 	   
 	</head>
 	<body class ="main"> 
+		<div class="container-fluid">
 		<nav class="navbar">
 			<ul class = "innav">
 			  <li class ="l"><a href="../../">Kinshuk</a></li>
@@ -24,9 +25,9 @@
 		</nav>
 		<h2>&nbsp;Exploratry and predective data analysis for SFCAPC</h2>
 		<p>Developed as a part of DataKind hackathon with a team of data scientists from different walks of life.</p>
-		<div class="units-row">
+		<div class="row">
 		    
-		    <div class="unit-50">
+		    <div class="col-md-6 col-xs-12" style="height:500px">
 			    <ul class="slides">
 				    <input type="radio" name="radio-btn" id="img-1" checked />
 				    <li class="slide-container">
@@ -93,7 +94,7 @@
 				    </li>
 				</ul>
 			</div>
-			<div class="unit-50">
+			<div class="col-md-6 col-xs-12">
 				<h4>Problem: </h4>
 				<p>
 					Objective of this project was to predict clients who will succeed at building protective factors, so that SFACPC could better allocate staff, time and resources.						
@@ -115,5 +116,9 @@
 				</p>
 			</div>
 		</div>
+		</div>
 	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../../bootstrap/js/bootstrap.js"></script>
+	<script src="../../bootstrap/js/bootstrap.min.js"></script>
 </html>

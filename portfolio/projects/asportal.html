@@ -5,8 +5,8 @@
 
 	    <meta charset="utf-8" />
 	    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	    <link rel="stylesheet" href="../../css/kube.min.css" />
+	    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.css">
+	    <!--<link rel="stylesheet" href="../../css/kube.min.css" />-->
 	    <link rel="stylesheet" href="../../css/main.css" />
 		<style>
 			
@@ -14,6 +14,7 @@
 	   
 	</head>
 	<body class ="main"> 
+		<div class="container-fluid">
 		<nav class="navbar">
 			<ul class = "innav">
 			  <li class ="l"><a href="../../">Kinshuk</a></li>
@@ -24,9 +25,9 @@
 		</nav>
 		<h2>&nbsp;Assignment Portal</h2>
 		<p>Developed as a part of class project for Advanced Internet Technology class in a team of two with Reeth Dhar.</p>
-		<div class="units-row">
+		<div class="row">
 		    
-		    <div class="unit-50">
+		    <div class="col-md-6 col-xs-12" style="height:500px">
 			    <ul class="slides">
 				    <input type="radio" name="radio-btn" id="img-1" checked />
 				    <li class="slide-container">
@@ -93,7 +94,7 @@
 				    </li>
 				</ul>
 			</div>
-			<div class="unit-50">
+			<div class="col-md-6 col-xs-12">
 				<h4>Problem:</h4>
 				<p>
 					We wanted to make a platform for instructors to give assignments and quizzes to class and for students to keep a record of their grades in all the assignemnts and quizzes.
@@ -116,5 +117,9 @@
 				</p>
 			</div>
 		</div>
+		</div>
 	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../../bootstrap/js/bootstrap.js"></script>
+	<script src="../../bootstrap/js/bootstrap.min.js"></script>
 </html>

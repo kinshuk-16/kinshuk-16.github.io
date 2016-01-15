@@ -5,13 +5,17 @@
 
 	    <meta charset="utf-8" />
 	    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	    <link rel="stylesheet" href="../css/kube.min.css" />
+	    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+		<!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
+	    <link rel="stylesheet" href="../css/kube.min.css" />-->
 	    <link rel="stylesheet" href="../css/main.css" />
 	
 	   
 	</head>
 	<body class ="main"> 
+		<div class="container-fluid">
 		<nav class="navbar">
 			<ul>
 			  <li class ="l"><a href="../">Kinshuk</a></li>
@@ -20,10 +24,11 @@
 			  <li class ="r"><a href="../">Home</a></li>
 			</ul>
 		</nav>
+		
 		<section>
-		<div class="units-row">
- 			<div class="unit-35"><img src = "../img/kin-crop.jpg" alt ="Kinshuk"></div>
-   			<div class="unit-65"><h2>About me</h2>
+		<div class="row">
+ 			<div class="col-md-4 col-xs-12"><img src = "../img/kin-crop.jpg" alt ="Kinshuk"></div>
+   			<div class="col-md-8 col-xs-12"><h2>About me</h2>
    				<p>
    					I’m currently a master’s student at UC Berkeley’s School of Information with a focus on user centric product design and devlopment.
    				</p>
@@ -43,13 +48,14 @@
    					</p>
    			</div>
 		</div>
+
 		</section>    
-		<br><br><br><br><br><br>
+		<br>
    		<hr width="25%">
    		<center><h2>What I do <h2></center>
    		<section>
-	   		<div class="units-row">
-	 			<div class="unit-25">
+	   		<div class="row">
+	 			<div class="col-md-3 col-xs-12">
 	 				<p>UI/UX</p>
 	 				<ul>
 	 					<li>Contextual interviews</li>
@@ -58,7 +64,7 @@
 	 					<li>Usability testing</li>
 	 				</ul>
 	 			</div>
-    			<div class="unit-25">
+    			<div class="col-md-3 col-xs-12">
     				<p>Research and Data Analysis</p>
 	 				<ul>
 	 					<li>Research methodologies</li>
@@ -67,7 +73,7 @@
 	 					<li>Experimental design</li>
 	 				</ul>
     			</div>
-    			<div class="unit-25">
+    			<div class="col-md-3 col-xs-12">
     				<p>Core Programming</p>
 	 				<ul>
 	 					<li>Python</li>
@@ -76,7 +82,7 @@
 	 					<li>Sql</li>
 	 				</ul>
     			</div>
-    			<div class="unit-25">
+    			<div class="col-md-3 col-xs-12">
     				<p>Web</p>
 	 				<ul>
 	 					<li>HTML</li>
@@ -86,18 +92,23 @@
     			</div>
 			</div>
 		</section>
+		<br>
 		<hr width="25%">
    		<center><h2>Outside of school <h2></center>
 		<section>
 		<p>
 			When I am not in class, doing an assignment or working on a project, I like to read thought provoking non fiction, explore new places and take photographs.
 		</p>
-   		<div class="units-row">
-   			<div class="unit-25"><img src = "../img/pic1.jpg" alt ="Lake"></div>
-   			<div class="unit-25"><img src = "../img/pic2.jpg" alt ="Monk"></div>
-   			<div class="unit-25"><img src = "../img/pic3.JPG" alt ="Corridor"></div>
-   			<div class="unit-25"><img src = "../img/pic4.JPG" alt ="Golden gate"></div>
+   		<div class="row">
+   			<div class="col-md-3 col-xs-6" style="padding-right: 0px; padding-left: 0px;"><img src = "../img/pic1.jpg" alt ="Lake"></div>
+   			<div class="col-md-3 col-xs-6" style="padding-left: 0px; padding-right: 0px;"><img src = "../img/pic2.jpg" alt ="Monk"></div>
+   			<div class="col-md-3 col-xs-6" style="padding-right: 0px; padding-left: 0px;"><img src = "../img/pic3.JPG" alt ="Corridor"></div>
+   			<div class="col-md-3 col-xs-6" style="padding-left: 0px; padding-right: 0px;"><img src = "../img/pic4.JPG" alt ="Golden gate"></div>
    		</div>
    		</section>
+   	</div>
 	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
 </html>
