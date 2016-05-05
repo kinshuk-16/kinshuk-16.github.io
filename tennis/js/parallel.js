@@ -3,30 +3,30 @@ var margin = {top: 30, right: 100, bottom: 20, left: 200},
     width = 1100 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
-var dset = "../data/parallel2011.csv";
+var dset = "data/parallel2011.csv";
 startD3();
 var yearSelector = function (event) {
 	var element = document.getElementById("year");
 	var selectedValue = element.options[element.selectedIndex].text;
     
     if (selectedValue == "2011") {
-    	dset = "../data/parallel2011.csv";
+    	dset = "data/parallel2011.csv";
     	startD3();
     }
     else if (selectedValue =="2012") {
-    	dset = "../data/parallel2012.csv";
+    	dset = "data/parallel2012.csv";
     	startD3();
     }
     else if (selectedValue =="2013") {
-    	dset = "../data/parallel2013.csv";
+    	dset = "data/parallel2013.csv";
     	startD3();
     }
     else if (selectedValue =="2014") {
-    	dset = "../data/parallel2014.csv";
+    	dset = "data/parallel2014.csv";
     	startD3();
     }
     else if (selectedValue =="2015") {
-      dset = "../data/parallel2015.csv";
+      dset = "data/parallel2015.csv";
       startD3();
     }
     console.log(dset);
