@@ -1,1 +1,6 @@
-# kinshuk-16.github.io
+# www.kinshuk.co
+---
+
+Personal website. 
+
+Resources used - [Materialize](http://materializecss.com/)
