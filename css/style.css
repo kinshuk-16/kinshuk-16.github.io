@@ -1,0 +1,194 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #fff;
+}
+
+.landing{
+  height: 40px;
+}
+
+p {
+  line-height: 2rem;
+}
+.button-collapse {
+  color: #26a69a;
+}
+.parallax img{
+      width: 2000px;
+    min-width: 50%;
+}
+.parallax-container {
+  min-height: 380px;
+/*  height: 600px;*/
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.valign-wrapper{
+  min-height:100px;
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+  .chip{
+    cursor:pointer;
+  }
+
+/* cards */
+.card {
+  height:260px;
+}
+.card .card-image {
+    height: 160px;
+}
+.card-title a{
+  color: #b71c1c ;
+  font-weight: 400;
+}
+
+.card .card-content {
+    height: 100px;
+}
+.card-content .activator{
+  cursor:pointer;
+}
+.card .card-image #tennis, #univiz {
+  height:160px;
+}
+
+ #top-nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    z-index: 100;
+    color: #fff;
+    opacity: 0.8;
+ }
+ nav ul a:hover{
+      background-color: #616161;
+ }
+#project-nav{
+  background-color: #000;
+  /*width: 100%;*/
+  height: 50px;
+}
+
+ #download-button{
+  font-weight: bold;
+ }
+.skill-para{
+  font-weight: 400;
+  line-height: 20px;
+}
+ #top-title{
+    margin-bottom:2.2rem;
+    margin-top:1.5rem;
+ }
+ #top-subtitle{
+    margin-bottom: 2.4rem;
+    line-height: 140%;
+ }
+ .skill-icon{
+    margin-bottom: 0rem;
+ }
+#my-pic{
+  max-width: 100%;
+}
+#connect{
+  display: inline-block;
+  padding-right: 320px;
+  padding-left:30px
+}
+ul#connect-list li{
+  display: inline;
+  padding-right: 50px;
+
+}
+ul#connect-list{
+  display:inline-block;
+}
+footer.page-footer{
+  background-color: #911C0B;
+  height:auto;
+  padding-top: 0px;
+}
+
+.card .card-content .card-title{
+  line-height: 30px;
+}
+ul#proj-skill{
+    list-style-type: circle;
+}
+ul#proj-skill li{
+    list-style-type: circle;
+}
+@media only screen and (min-width: 601px){
+  nav{
+      line-height: 50px;
+  }
+}
+@media only screen and (max-width : 993px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+
+}
+
+/*for big screens, width more than 993*/
+@media only screen and (min-width : 993px) {
+  /*
+    fixing the text positioning in nav bar. 
+    Overrriding some of the things in .container
+  */
+  #top-nav .container{
+      width: 95%;
+      color:#000;
+    }
+    #project-nav .container{
+      width: 95%;
+    }
+  /*Fixing padding of text inside parallax*/
+  #index-banner .section {
+    padding-top: 3em;
+    padding-bottom: 1em;
+  }
+  /*#proj{
+    width:70%;
+  }*/
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+
+

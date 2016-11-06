@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	   <title>KoÀlacarte</title>
+	     <!-- CSS  -->
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	  <link href="../css/slider.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	   
+	</head>
+	<body> 
+		<nav class="black" role="navigation" id="project-nav">
+	    <div class="nav-wrapper container">
+	      <a id="logo-container" href="#" class="brand-logo">Kinshuk</a>
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="../index.html#">Home</a></li>
+	        <li><a href="../index.html#projects">Projects</a></li>
+	        <li><a href="../index.html#about">About</a></li>
+	      </ul>
+
+	      <ul id="nav-mobile" class="side-nav">
+	        <li><a href="../index.html#">Home</a></li>
+	        <li><a href="../index.html#projects">Projects</a></li>
+	        <li><a href="../index.html#about">About</a></li>
+	      </ul>
+	      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+	    </div>
+	  </nav>
+	  <div class="container" id = "proj">
+		<h4><span class="red-text text-darken-4">KoÀlacarte: App to make informed food choices</span></h4>
+		<p>Developed application as a final project for Information Organization Lab in a team of three with Nico Soldi and Ganesh Viswanathan. <a href="IOLabFinalReport/IOLabFinalReport.html" target="_blank">Full report</a></p>
+		<div class="row">
+		    
+		    <div class="col l12 s12" style="height:500px">
+			    <ul class="slides">
+				    <input type="radio" name="radio-btn" id="img-1" checked />
+				    <li class="slide-container">
+						<div class="slide">
+							<img src="../img/koalacarte/image00.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-6" class="prev">&#x2039;</label>
+							<label for="img-2" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <input type="radio" name="radio-btn" id="img-2" />
+				    <li class="slide-container">
+				        <div class="slide">
+				          <img src="../img/koalacarte/image08.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-1" class="prev">&#x2039;</label>
+							<label for="img-3" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <input type="radio" name="radio-btn" id="img-3" />
+				    <li class="slide-container">
+				        <div class="slide">
+				          <img src="../img/koalacarte/image09.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-2" class="prev">&#x2039;</label>
+							<label for="img-4" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <input type="radio" name="radio-btn" id="img-4" />
+				    <li class="slide-container">
+				        <div class="slide">
+				          <img src="../img/koalacarte/image11.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-3" class="prev">&#x2039;</label>
+							<label for="img-5" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <input type="radio" name="radio-btn" id="img-5" />
+				    <li class="slide-container">
+				        <div class="slide">
+				          <img src="../img/koalacarte/image12.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-4" class="prev">&#x2039;</label>
+							<label for="img-6" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <li class="nav-dots">
+				      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+				      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+				      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+				      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+				      <label for="img-5" class="nav-dot" id="img-dot-5"></label> 
+				    </li>
+				</ul>
+				
+			</div>
+			<div class="col l12 s12">
+				<h4><span class="red-text text-darken-4">Problem:</span></h4>
+				<p>
+					If you experience an uncertainty about the food you are about to order at a restaurant, specifically if it could contain a serious food allergen, then you are one among approximately 15 million Americans affected by food allergy. KoÁlacarte is a Service that allows user to identify dishes that are safe to eat in a restaurant keeping in mind dietary restrictions and preferences. 
+						
+				</p>
+				<h4><span class="red-text text-darken-4">Process:</span></h4>
+				<p>The first step in the process was collecting a database of menus. Next step was to match dietary preference of users at ingredient level to menu item. This was done by collecting recipes for all the items in the menu. Multiple recipes were collected for single dish as different recipes differed slightly in the ingredients they use. This approach was used to be give user a probability score of an ingredient occurring in a menu item.</p>
+				<p>My role in this project was limited to application development. We decided that the use case of the app is mostly in a restaurant setting so the app must be available on the go. Therefore we decided to implement the app as a mobile app rather than a desktop app.</p>
+				<p>We build the app using Ionic framework. We made the choice as Ionic can be used to make hybrid mobile apps easily. Code for Iocnic is written in HTML5, CSS and AnglarJS, Ionic creates native code for Android and iOS using the underlying Cordova API. It Works like a single page application with one index.html and different templates plugin as needed. JS part divided into route, controller, services, directives and app, like a typical application in angular.</p>
+				<p>We built a database model to include two main entities, the user and the restaurant. The user could store the  ingredient that they have to restrict in their diet in the database through the onboarding process. The restaurant has a menu, each menu has a list of dishes and dishes had a list of ingredients in them.</p>
+				<p>The application uses hybrid database to manage information and an API layer to delegate information retrieval and storage in the database. The primary ingredient database was created as a Mongo Database and was connected to the application via mLab API. We also decided to use Firebase to store user authentication information. Firebase is optimized for maintaining user information such as user id, user name, email and password. </p>
+
+				<h4><span class="red-text text-darken-4">Skills used:</span></h4>
+				<ul id="proj-skill">
+						<li>Javascript (Angular JS)</li>
+						<li>HTML</li>
+						<li>Database modeling</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	</body>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/init.js"></script>
+</html>

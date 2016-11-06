@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	   <title>Tennis Surface Study</title>
+	     <!-- CSS  -->
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	  <link href="../css/slider.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	   
+	</head>
+	<body> 
+		<nav class="black" role="navigation" id="project-nav">
+	    <div class="nav-wrapper container">
+	      <a id="logo-container" href="#" class="brand-logo">Kinshuk</a>
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="../index.html#">Home</a></li>
+	        <li><a href="../index.html#projects">Projects</a></li>
+	        <li><a href="../index.html#about">About</a></li>
+	      </ul>
+
+	      <ul id="nav-mobile" class="side-nav">
+	        <li><a href="../index.html#">Home</a></li>
+	        <li><a href="../index.html#projects">Projects</a></li>
+	        <li><a href="../index.html#about">About</a></li>
+	      </ul>
+	      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+	    </div>
+	  </nav>
+	  <div class="container" id = "proj">
+		<h4><span class="red-text text-darken-4">Tennis Surface study</span></h4>
+		<p>Developed as a part of final project for Information Visualization class in a team of three with Puneet Sharma and Proxima DasMohapatra.&nbsp;&nbsp; <a href="https://github.com/kinshuk-16/tennis" target="_blank">Code</a>  &nbsp;&nbsp;<a href="http://www.ischool.berkeley.edu/~kinshuk/tennis" target="_blank">Project</a> &nbsp;&nbsp;<a href="TennisSurfaceStudy/TennisSurfaceStudyInformationVisualizationFin.html" target="_blank">Full Report</a></p>
+		<div class="row">
+		    
+		    <div class="col l12 s12" style="height:500px">
+			    <ul class="slides">
+				    <input type="radio" name="radio-btn" id="img-1" checked />
+				    <li class="slide-container">
+						<div class="slide">
+							<img src="../img/tennis/image02.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-6" class="prev">&#x2039;</label>
+							<label for="img-2" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <input type="radio" name="radio-btn" id="img-2" />
+				    <li class="slide-container">
+				        <div class="slide">
+				          <img src="../img/tennis/image11.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-1" class="prev">&#x2039;</label>
+							<label for="img-3" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <input type="radio" name="radio-btn" id="img-3" />
+				    <li class="slide-container">
+				        <div class="slide">
+				          <img src="../img/tennis/image10.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-2" class="prev">&#x2039;</label>
+							<label for="img-4" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <input type="radio" name="radio-btn" id="img-4" />
+				    <li class="slide-container">
+				        <div class="slide">
+				          <img src="../img/tennis/image12.jpg" />
+				        </div>
+						<div class="nav">
+							<label for="img-3" class="prev">&#x2039;</label>
+							<label for="img-5" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <input type="radio" name="radio-btn" id="img-5" />
+				    <li class="slide-container">
+				        <div class="slide">
+				          <img src="../img/tennis/image05.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-4" class="prev">&#x2039;</label>
+							<label for="img-6" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <li class="nav-dots">
+				      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+				      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+				      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+				      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+				      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+				      
+				    </li>
+				</ul>
+			</div>
+			<div class="col l12 s12">
+				<h4><span class="red-text text-darken-4">Problem:</span></h4>
+				<p>
+					One of the most interesting aspects of the game of tennis is the court surface itself and how different players adopt different playing styles in order to increase their chances of winning. So for this project we decided to present a study of these three main surfaces, Grass (at Wimbledon), Clay (at the French Open) and Hard courts (US Open and Australian Open) and various metrics that highlight a certain aspect of the game.
+						
+				</p>
+				<h4><span class="red-text text-darken-4">Process:</span></h4>
+				<p>The first step in the process was studying previous work and research done in the field of sports info graphic and information visualization. We specifically looked into tennis visualization and the affects of court surfaces on playing style. (Please see the <a href="TennisSurfaceStudy/TennisSurfaceStudyInformationVisualizationFin.html" target="_blank">full report </a>for detailed analysis of related work)</p>
+				<p>After deep dive into related work and research we had to look for a dataset that would serve the purpose of explaining surface. We found a lot of data sets containing tennis stat. We finally used a point-by-point  game data of 5 years of grand slams (<a href="https://github.com/JeffSackmann/tennis_atp">Data source</a>). The data had to be cleaned and compiled in a form that could be used for visualizing. We used different tools for the purpose, starting from simple manipulation in spreadsheet to Python, R and MySql. </p>
+				<p>One of the most important aspect of information visualization that captures audience attention is creating a narrative around the information. We recognized the need to explain the game and giving a background of the  tournament in order to set a stage for the presentation. To accomplish this purpose we decided to start the presentation with info graphic. This info graphic was first designed on paper in several lo-fi prototypes. We finalized the prototype using adobe illustrator after getting feedback and revising the paper prototype. The info graphic gave introduction to the tournament, different surfaces and the effect of surface on game.</p>
+				<p>For next part of the presentation we wanted to orient the audience geographically. For this we created an interactive map in D3 highlighting all the place where tennis tournaments in different court (hard, grass or clay) happen around the world. It also highlighted the relative abundance of hard court compared to grass and clay court. </p>
+				<p>After the map we wanted to show the four metrics to highlight and the affect of surface on the game. For this purpose we created four interactive dashboards and storyboards using Tableau. Users could interact and explore interesting patterns in the dashboard. We also added supporting text and explanation with the dashboard.</p>
+				<p>For the last part of the visualization, we brought together all the data in an interactive parallel coordinate chart to show how these metrics relate to each other.</p>
+
+				<h4><span class="red-text text-darken-4">Skills used:</span></h4>
+				<ul id="proj-skill">
+						<li>Design in Illustrator</li>
+						<li>Data Cleaning</li> 
+						<li>Data Analysis</li>
+						<li>Data Visualization - Highcharts, D3, Tableau</li> 
+						<li>Frontend Development - HTML, CSS, Javascript</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	</body>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/init.js"></script>
+</html>

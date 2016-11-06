@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	   <title>Data Dive</title>
+	     <!-- CSS  -->
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	  <link href="../css/slider.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	   
+	</head>
+	<body> 
+		<nav class="black" role="navigation" id="project-nav">
+	    <div class="nav-wrapper container">
+	      <a id="logo-container" href="#" class="brand-logo">Kinshuk</a>
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="../index.html#">Home</a></li>
+	        <li><a href="../index.html#projects">Projects</a></li>
+	        <li><a href="../index.html#about">About</a></li>
+	      </ul>
+
+	      <ul id="nav-mobile" class="side-nav">
+	        <li><a href="../index.html#">Home</a></li>
+	        <li><a href="../index.html#projects">Projects</a></li>
+	        <li><a href="../index.html#about">About</a></li>
+	      </ul>
+	      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+	    </div>
+	  </nav>
+	  <div class="container" id = "proj">
+		<h4><span class="red-text text-darken-4">Exploratry and predective data analysis for social good</span></h4>
+		<p>Developed as a part of DataKind hackathon with a team of data scientists. Organization: SFCAPC (San Fransisco Child Abuse Protection Center)</p>
+		<div class="row">
+		    
+		    <div class="col l12 s12" style="height:500px">
+			    <ul class="slides">
+				    <input type="radio" name="radio-btn" id="img-1" checked />
+				    <li class="slide-container">
+						<div class="slide">
+							<img src="../img/datadive/datadive5.png"/>
+				        </div>
+						<div class="nav">
+							<label for="img-6" class="prev">&#x2039;</label>
+							<label for="img-2" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <input type="radio" name="radio-btn" id="img-2" />
+				    <li class="slide-container">
+				        <div class="slide">
+				          <img src="../img/datadive/datadive2.jpg" />
+				        </div>
+						<div class="nav">
+							<label for="img-1" class="prev">&#x2039;</label>
+							<label for="img-3" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <input type="radio" name="radio-btn" id="img-3" />
+				    <li class="slide-container">
+				        <div class="slide">
+				          <img src="../img/datadive/datadive3.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-2" class="prev">&#x2039;</label>
+							<label for="img-4" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <input type="radio" name="radio-btn" id="img-4" />
+				    <li class="slide-container">
+				        <div class="slide">
+				          <img src="../img/datadive/datadive4.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-3" class="prev">&#x2039;</label>
+							<label for="img-5" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <input type="radio" name="radio-btn" id="img-5" />
+				    <li class="slide-container">
+				        <div class="slide">
+				          <img src="../img/datadive/datadive1.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-4" class="prev">&#x2039;</label>
+							<label for="img-6" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <li class="nav-dots">
+				      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+				      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+				      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+				      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+				      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+				      
+				    </li>
+				</ul>
+			</div>
+			<div class="col l12 s12">
+				<h4><span class="red-text text-darken-4">Problem:</span></h4>
+				<p>
+					Objective of this project was to predict clients who will succeed at building protective factors, so that SFACPC could better allocate staff, time and resources.
+						
+				</p>
+				<h4><span class="red-text text-darken-4">Process:</span></h4>
+				<p>As part of the DataKind hackathon I got to work for  San Francisco Child Abuse Prevention Center which provides targeted intervention program to high risk families in order to build protective fators and prevent child abuse.</p> 
+				<p>We started with raw data that the center had collected over two years on the families that go through its programs and their scores at various points in the program. To understand the data better we built out a data model. This helped us in outlining the major predective factors that could affect the outcome, ie, succeeding the program. At this point we hypothesised that demographics and the interventions that the family recieves would have an affect on building protective factors in individual. We then Preprocessed all our data to make it in a form amenable to further analysis.</p>
+				<p>We conducted a lot of exploratory and predective analysis on the data. Using least square regression (OLS) on the data we found out that some of the interventions like adult counselling and care anagement has higher impact on building protective factors. In general, we also found that the more time an individual spends in the interventions, more likely they are to succeed. Another key finding was that the zip code of families ,ie, their neighbourhood has an affect on their likelyhood to succeed in the progam.</p>
+				<h4><span class="red-text text-darken-4">Skills used:</span></h4>
+				<ul id="proj-skill">
+						<li>Statistical analysis using R</li>
+						<li> Data modelling</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	</body>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/init.js"></script>
+</html>

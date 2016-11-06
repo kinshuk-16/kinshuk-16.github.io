@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	   <title>University Ranking Viz</title>
+	     <!-- CSS  -->
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	  <link href="../css/slider.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	   
+	</head>
+	<body> 
+		<nav class="black" role="navigation" id="project-nav">
+	    <div class="nav-wrapper container">
+	      <a id="logo-container" href="#" class="brand-logo">Kinshuk</a>
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="../index.html#">Home</a></li>
+	        <li><a href="../index.html#projects">Projects</a></li>
+	        <li><a href="../index.html#about">About</a></li>
+	      </ul>
+
+	      <ul id="nav-mobile" class="side-nav">
+	        <li><a href="../index.html#">Home</a></li>
+	        <li><a href="../index.html#projects">Projects</a></li>
+	        <li><a href="../index.html#about">About</a></li>
+	      </ul>
+	      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+	    </div>
+	  </nav>
+	  <div class="container" id = "proj">
+		<h4><span class="red-text text-darken-4">Visualizing Times Higher Education world university ranking</span></h4>
+		<p>Developed visualizations to look at Times Higher Education world university ranking data. Worked with Sameer Bajaj as part of Information Visualization class. I was responsible for the parallel coordinates chart (I was responsible for creating the parallel coordinalte visualization). &nbsp;&nbsp; <a href="https://github.com/kinshuk-16/univiz" target="_blank">Code</a>  &nbsp;&nbsp;<a href="http://www.kinshuk.co/d3viz/" target="_blank">Project</a></p>
+		<div class="row">
+		    
+		    <div class="col l12 s12" style="height:500px">
+			    <ul class="slides">
+				    <input type="radio" name="radio-btn" id="img-1" checked />
+				    <li class="slide-container">
+						<div class="slide">
+							<img src="../img/univiz/img2.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-3" class="prev">&#x2039;</label>
+							<label for="img-2" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <input type="radio" name="radio-btn" id="img-2" />
+				    <li class="slide-container">
+				        <div class="slide">
+				          <img src="../img/univiz/img1.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-1" class="prev">&#x2039;</label>
+							<label for="img-3" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <input type="radio" name="radio-btn" id="img-3" />
+				    <li class="slide-container">
+				        <div class="slide">
+				          <img src="../img/univiz/img0.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-2" class="prev">&#x2039;</label>
+							<label for="img-1" class="next">&#x203a;</label>
+						</div>
+				    </li>	
+
+				    <li class="nav-dots">
+				      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+				      <label for="img-2" class="nav-dot" id="img-dot-2"></label> 
+				      <label for="img-3" class="nav-dot" id="img-dot-3"></label>      
+				    </li>
+				</ul>
+			</div>
+			<div class="col l12 s12">
+				<h4><span class="red-text text-darken-4">Problem:</span></h4>
+				<p>
+					The aim of the visualization is to present the Times Higher Education World University Rankings for 2011-2016 in a creative and interactive way.
+						
+				</p>
+				<h4><span class="red-text text-darken-4">Parallel Coordinates:</span></h4>
+				 
+				 <h5>Data</h5>
+				<p>The data has several different types of variables or attributes. Name and country is nominal and then there are several quantitative score. For the parallel coordinates, we decided to show the 5 quantitative scores, i.e., teaching, income, citation and international and to to not show student staff ratio, number of students and sex ratio because the 5 scores seem to be at same conceptual level from a point of view of comparing the universities. Another reason for choosing these were because they had same scale and hence comparable across attributes. Apart from the quantitative scores, we also decided to include name and country, which are nominal variable.</p>
+				<h5>Visualization</h5>
+				<p>Parallel coordinate is an excellent visualization for showing many discrete entity values across many different attributes. We decided to keep 7 attributes from the data set, each represented in a different axis. This is in contrast to radial charts, which can only show a very limited number of entities at a time and are better suited for aggregated values rather than discrete values.</p>
+				<p>I decided add an axis for the name of the university and create a mouse over event for these so that when one hovers over the name of a university they can see the path followed by (and hence the scores in different attributes) the line of that university. This the reason I limited the list to top 30 universities. Since having about 800 universities on one axis would have either made the visualization too long vertically and introduced a long scroll or would have meant that each university name become too small and incomprehensible. In both cases the graph would have been pretty much unusable for any meaningful comparison.</p>
+				<p>I also decided to use color-coding for lines representing universities in different countries. This is useful to compare the general performance of different countries. I decided to go with very disparate colors for all the countries so that the difference is marked when we brush for some score in the quantitative scale. The key on the side provides guide on the color usage for different countries</p>
+				<p>I divided the dataset by year. The parallel coordinate only plots one year at a time and the year to be plotted can be selected from the dropdown on top. When the page is loaded for the first time the data from 2016 is plotted.</p>
+
+				<h4><span class="red-text text-darken-4">Skills used:</span></h4>
+				<ul id="proj-skill">
+						<li>Javascript (D3)</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	</body>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/init.js"></script>
+</html>

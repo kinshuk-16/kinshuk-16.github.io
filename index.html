@@ -1,54 +1,268 @@
 <!DOCTYPE html>
-<html>
-	<head>
-	    <title>Kinshuk's Portfolio</title>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Kinshuk</title>
 
-	    <meta charset="utf-8" />
-	    <meta name="viewport" content="width=device-width, initial-scale=1" />
-	    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-		<!--<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.css">
-		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.min.css">
-	    <link rel="stylesheet" href="css/kube.min.css" />-->
-	    <link rel="stylesheet" href="css/main.css" />
-		<style>
-			.main{ 
-			  background: url(img/bk.jpeg) no-repeat center center fixed; 
-			  -webkit-background-size: cover;
-			  -moz-background-size: cover;
-			  -o-background-size: cover;
-			  background-size: cover;
-			  overflow-y: hidden;
-			}
-		</style>
-	   
-	</head>
-	<body class ="main"> 
-		<div class="container-fluid">
-		<nav class="navbar">
-			<ul>
-			  <li class ="l"><a href="/">Kinshuk</a></li>
-			  <li class ="r"><a href="/about">About Me</a></li>
-			  <li class ="r"><a href="/portfolio">Portfolio</a></li>
-			  <li class ="r"><a class="active"  href="/">Home</a></li>
-			</ul>
-		</nav>
-		
-			
-		    <section>
-		    	<div class="row">
-		    	<h1>Kinshuk</h1>
-			    <div id="one" class="col-md-6 col-xs-6" style="padding-left: 0px;">I am a graduate student at UC Berkeley School of Information</div>
-			    <div id="two" class="col-md-6 col-xs-6" >I work at the intersection of design and development</div>
-			    <div id= "bottom">
-			    	<a href="/portfolio" class="btn btn-outline" style="margin-right:70px; margin-bottom:20px" >Visit Portfolio</a>	
-			    	<a href="/about" class="btn btn-outline" style="margin-left:75px;">Read More</a>
-			    </div>  
-			</div>
-			</section>	
-		</div>
-	</body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="bootstrap/js/bootstrap.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="black" role="navigation" id="top-nav">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Kinshuk</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text text-lighten-2 " id="top-title">Hi, I am Kinshuk</h1>
+        <div class="row center">
+          <h5 class="header col s12 light" id="top-subtitle">A graduate student at UC Berkeley School of Information, working at the intersection of design and development</h5>
+        </div>
+        <div class="row center">
+          <a href="#projects" id="download-button" class="btn-large waves-effect waves-light white lighten-1 red-text text-darken-4 z-depth-4">Go to Projects</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="img/parallax-img.jpeg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center red-text text-darken-4 skill-icon"><i class="material-icons">code</i></h2>
+            <h5 class="center">UI Development</h5>
+
+            <p class="skill-para">
+              Proficient with HTML, CSS, Javascript, jQuery. Worked with veriety of frameworks like Ionic, Angular, Backbone, Mustache and more  Server side development using Nodejs and Python Flask  Database connection using SQL and Mongo DB.
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center red-text text-darken-4 skill-icon"><i class="material-icons">group</i></h2>
+            <h5 class="center">UX Research </h5>
+              
+            <p class="skill-para">Conducted contextual interviews, developed persona , work model , usability testing. Practiced research methods like survey design, experiment design, hypothesis and statistical testing using R.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center red-text text-darken-4 skill-icon"><i class="material-icons">equalizer</i></h2>
+            <h5 class="center">Data Visualization</h5>
+
+            <p class="skill-para">Practiced data cleaning Python and R. Worked on visualization and data presentation projects using, Adobe Illustrator, D3.js, Highcharts, Tableau.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!--   divider -->
+<div class="parallax-container valign-wrapper">
+    <div class="parallax"><img src="img/parallax-img.jpeg" alt="Unsplashed background img 2"></div>
+</div>
+
+<!-- project section -->
+  
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <div class ="landing"><a name="projects">&#126;&#126;</a></div>
+          <h4><span class="red-text text-darken-4">Projects</span></h4>
+          <div class="chip red darken-4 white-text" id="ux">UX research</div>
+          <div class="chip red darken-4 white-text" id="da">Data Analysis</div>
+          <div class="chip red darken-4 white-text" id="dv">Data Visualization</div>
+          <div class="chip red darken-4 white-text" id="ui">UI Dev</div>
+            <div class="row">
+            <!--card1-->
+              <div class="col s12 l3 m6 ux">
+                <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <a href="projects/calcentral.html"><img src="img/calcentral/calcentralLogo.jpg"></a>
+                  </div>
+                  <div class="card-content left-align">
+                  <span class="card-title  grey-text text-darken-4"><a href="projects/calcentral.html">Budgeting &nbsp;&nbsp;&nbsp; Tool</a></span>
+                    <span class="activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Student Budgeting Tool<i class="material-icons right">close</i></span>
+                    <p>#ContextualInterview #PersonaDevelopment #Prototyping #UserTesting </p>
+                  </div>
+                </div>
+              </div>
+              <!--card2-->
+              <div class="col s12 l3 m6 ui">
+                <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <a href="projects/koalacarte.html"><img src="img/koalacarte/image06.png"></a>
+                  </div>
+                  <div class="card-content left-align">
+                    <span class="card-title "><a href="projects/koalacarte.html">KoÀlacarte</a></span>
+                    <span class="activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">KoÀlacarte<i class="material-icons right">close</i></span>
+                    <p>#Angular #javascript #webAPI #crossPlatform</p>
+                  </div>
+                </div>
+              </div>
+              <!--card3-->
+              <div class="col s12 l3 m6 da dv ui">
+                <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <a href="projects/tennis.html"><img id="tennis" src="img/tennis/tennis5.jpg"></a>
+                  </div>
+                  <div class="card-content left-align">
+                    <span class="card-title  grey-text text-darken-4"><a href="projects/tennis.html">Tennis Surface Viz</a></span>
+                    <span class="activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Tennis Surface Viz<i class="material-icons right">close</i></span>
+                    <p>#Illustrator #D3 #Tableau #javascript #infographic #DataVisualization #dataAnalysis</p>
+                  </div>
+                </div>
+              </div>
+              <!--card4-->
+              <div class="col s12 l3 m6 dv">
+                <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <a href="projects/univiz.html"><img src="img/univiz/univiz.png" id="univiz"></a>
+                  </div>
+                  <div class="card-content left-align">
+                    <span class="card-title  grey-text text-darken-4"><a href="projects/univiz.html">University Ranking Viz</a></span>
+                    <span class="activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">University Ranking Viz<i class="material-icons right">close</i></span>
+                    <p>#D3 #javascript #radarChart #parallelCoordinates</p>
+                  </div>
+                </div>
+              </div>
+              <!--card5-->
+              <div class="col s12 l3 m6 da">
+                <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <a href="projects/datadive.html"><img src="img/datadive/datadiveLogo.png"></a>
+                  </div>
+                  <div class="card-content left-align">
+                    <span class="card-title  grey-text text-darken-4"><a href="projects/datadive.html">Data Dive</a></span>
+                    <span class="activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Data Dive<i class="material-icons right">close</i></span>
+                    <p>#R #statisticalDataAnalysis #PredictiveDataAnalysis </p>
+                  </div>
+                </div>
+              </div>
+              <!--card6-->
+              <!-- <div class="col s12 l3 m6">
+                <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <a href="#"><img src="images/office.jpg"></a>
+                  </div>
+                  <div class="card-content left-align">
+                    <span class="card-title  grey-text text-darken-4"><a href="#">Card Title</a></span>
+                    <span class="activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!--   divider -->
+<div class="parallax-container valign-wrapper">
+    <div class="parallax"><img src="img/parallax-img.jpeg" alt="Unsplashed background img 2"></div>
+</div>
+
+<!-- about section -->
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <div class ="landing"><a name="about">&#126;&#126;</a></div>
+          <h4><span class="red-text text-darken-4">About me</span></h4>
+          <div class="row">
+            <div class="col s12 l4 m6">
+              <img id="my-pic" src = "img/kin-crop.jpg" alt ="Kinshuk">
+            </div>
+            <div class="col s12 l8 m6">
+              <p class="left-align">
+                I’m currently a master’s student at UC Berkeley’s School of Information with a focus on user centric product design and devlopment.
+              </p>
+              <p class="left-align">
+                I did my undergrad in computer science engineering and worked for two years in Oracle Cloud Services as system admin for cloud architecture.
+              </p>
+              <p class="left-align">
+                At Berkeley I am learning to look at technology engineering as well as from a social, behavioural. I am exploring UI design and development, UX research, data analysis and visualization. I aim to combine my technical skills with knowledge of human centric design and decision making.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="page-footer">
+    
+          <h5 class="white-text" id="connect">Get in Touch</h5>
+          <ul id="connect-list">
+            <li><a class="white-text" href="#!">Resume</a></li>
+            <li><a class="white-text" href ="https://www.linkedin.com/in/kinshuk2" target= "_blank">LinkedIn</a></li>
+            <li><a class="white-text" href ="mailto:kinshuk@berkeley.edu">Email</a></li>
+            <li><a class="white-text" href="https://github.com/kinshuk-16" target= "_blank">Github</a></li>
+          </ul>
+    <!-- give credit to materialize in read me md -->
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
 </html>
