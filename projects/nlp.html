@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	   <title>Notice and Comment</title>
+	     <!-- CSS  -->
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	  <link href="../css/slider.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	   
+	</head>
+	<body> 
+		<nav class="black" role="navigation" id="project-nav">
+	    <div class="nav-wrapper container">
+	      <a id="logo-container" href="#" class="brand-logo">Kinshuk</a>
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="../index.html#">Home</a></li>
+	        <li><a href="../index.html#projects">Projects</a></li>
+	        <li><a href="../index.html#about">About</a></li>
+	      </ul>
+
+	      <ul id="nav-mobile" class="side-nav">
+	        <li><a href="../index.html#">Home</a></li>
+	        <li><a href="../index.html#projects">Projects</a></li>
+	        <li><a href="../index.html#about">About</a></li>
+	      </ul>
+	      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+	    </div>
+	  </nav>
+	  <div class="container" id = "proj">
+		<h4><span class="red-text text-darken-4">Analyzing Government Notice and Comment</span></h4>
+		<p>The project aims to summarize government regulations and assess large volumes of comments on proposed these regulations. It utilizes natural language processing techniques like keyword extraction, key sentences extraction, clustering(unsupervised machine learning). Developed in a team of four including Emily Witt, Jason Danker and Proxima DasMohapatra.&nbsp;&nbsp; <a href="https://github.com/ProximaDas/nlp-govt-regulations" target="_blank">Code</a>  &nbsp;&nbsp;<a href="https://nlp-notice-and-comment.herokuapp.com/index" target="_blank">Website</a> &nbsp;&nbsp;<a href="GovtRegulations/GovtRegulationsFinalWriteup.html" target="_blank">Full Report</a></p>
+		<div class="row">
+		    
+		    <div class="col l12 s12" style="height:500px">
+			    <ul class="slides">
+				    <input type="radio" name="radio-btn" id="img-1" checked />
+				    <li class="slide-container">
+						<div class="slide">
+							<img src="../img/nlp/img4.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-4" class="prev">&#x2039;</label>
+							<label for="img-2" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <input type="radio" name="radio-btn" id="img-2" />
+				    <li class="slide-container">
+				        <div class="slide">
+				          <img src="../img/nlp/img5.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-1" class="prev">&#x2039;</label>
+							<label for="img-3" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+				    <input type="radio" name="radio-btn" id="img-3" />
+				    <li class="slide-container">
+				        <div class="slide">
+				          <img src="../img/nlp/img6.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-2" class="prev">&#x2039;</label>
+							<label for="img-1" class="next">&#x203a;</label>
+						</div>
+				    </li>
+				    <input type="radio" name="radio-btn" id="img-4" />
+				    <li class="slide-container">
+				        <div class="slide">
+				          <img src="../img/nlp/img7.png" />
+				        </div>
+						<div class="nav">
+							<label for="img-3" class="prev">&#x2039;</label>
+							<label for="img-1" class="next">&#x203a;</label>
+						</div>
+				    </li>
+
+
+				    <li class="nav-dots">
+				      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+				      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+				      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+				      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+				    </li>
+				</ul>
+			</div>
+			<div class="col l12 s12">
+				<h4><span class="red-text text-darken-4">Problem:</span></h4>
+				<p>
+					Our goal was to develop an algorithm that would aid human analysts at <a href="http://www.regulations.gov/" target="_blank">regulations.gov</a> in the process of summarizing and clustering comments submitted by citizens during each regulation’s mandatory notice-and-comment period.
+						
+				</p>
+				<h4><span class="red-text text-darken-4">Background:</span></h4>
+				<p>“When Congress passes laws, federal agencies implement those laws through regulations. These regulations vary in subject and include everything from ensuring water is safe to drink to setting health care standards. Regulations.gov is the place where users can find and comment on regulations.” - <a href="http://regulationsgov.github.io/developers/">Regulation.gov</a></p>
+				<p>Currently, all the comments are analyzed by government officials. While process works when the volume of comments is low, it fails when a particular regulation receives a large volume of comments. For example, the docket for the Consumer Financial Protection Bureau’s proposed rule on ‘Payday, Vehicle Title, and Certain High-Cost Installment Loans’ received 421,260 comments. Supposing an average of 1 minute is spent per comment, processing these comments would take approximately 878 8-hour work days. In this project, we aim to automatically summarize regulatory documents and cluster comments on those documents to aid policymakers in making better decisions based on the comments. We also hope this project will allow other interested parties to explore the documents and the comments being submitted.</p>
+				<h4><span class="red-text text-darken-4">Algorithms and details:</span></h4>
+				<dl>
+         <dt><b>Document keyword extraction</b></dt>
+         <dd>This algorithm extracts the keywords in a document. This helps the tool in giving users a high level idea of the topics that the document is talking about, and also acts as an input to other algorithms.</dd>
+         <dt><b>Key sentences from document</b></dt>
+         <dd>These are the sentences from the document that have the highest importance score, based on three criteria: highest number of our important keywords; longest length (indicating an abundance of information included); and presence of words indicating the sentence is related to the problem the regulation is attempting to solve.</dd>
+         <dt><b>Cluster comments based on topic</b></dt>
+         <dd>This algorithm clusters the comments on a document using k-means. The number of clusters is determined by the number of common parents for the top unigrams in the main document. The output for this algorithm is a collection of comment clusters based on the topic</dd>
+         <dt><b>Pull out central comment cluster sentence</b></dt>
+         <dd>As it is hard to determine the semantic meaning behind a cluster, we identified and selected the comment closest to the k-means centroid as a representative of that cluster.</dd>
+         <dt><b>Differentiating cluster phrases</b></dt>
+         <dd>Having clustered the comments, we merged all of the comments in each cluster into one ‘mega-comment’ and then used TF-IDF across these ‘mega-comments.’ </dd>
+        </dl>
+
+				<h4><span class="red-text text-darken-4">Skills used:</span></h4>
+				<ul id="proj-skill">
+						<li>Natural language processing (nltk library)</li>
+						<li>API data extraction</li> 
+						<li>Python</li>
+						<li>Web design (HTML, Materialize, javascript, Node JS)</li> 
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	</body>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/init.js"></script>
+</html>
